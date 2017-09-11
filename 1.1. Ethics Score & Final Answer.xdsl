@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- This network was created in GeNIe Academic, which can be used for educational and research purposes only -->
+<smile version="1.0" id="Network1" numsamples="1000" discsamples="10000">
+	<nodes>
+		<cpt id="FinalEthicsScore">
+			<state id="Consistently_Ethical" />
+			<state id="Situationally_Unethical" />
+			<state id="Routinely_Unethical" />
+			<state id="Consistently_Unethical" />
+			<probabilities>0.25 0.25 0.25 0.25</probabilities>
+		</cpt>
+		<cpt id="Answer_Dil41">
+			<state id="Yes" />
+			<state id="No" />
+			<parents>FinalEthicsScore</parents>
+			<probabilities>0.05 0.95 0.35 0.65 0.7 0.3 0.9 0.1</probabilities>
+		</cpt>
+		<cpt id="Answer_Dil43">
+			<state id="Yes" />
+			<state id="No" />
+			<parents>FinalEthicsScore</parents>
+			<probabilities>0.05 0.95 0.45 0.55 0.65 0.35 0.85 0.15</probabilities>
+		</cpt>
+		<cpt id="Answer_Dil55">
+			<state id="Yes" />
+			<state id="No" />
+			<parents>FinalEthicsScore</parents>
+			<probabilities>0.05 0.95 0.35 0.65 0.7 0.3 0.9 0.1</probabilities>
+		</cpt>
+		<cpt id="Answer_Dil51">
+			<state id="Yes" />
+			<state id="No" />
+			<parents>FinalEthicsScore</parents>
+			<probabilities>0.05 0.95 0.35 0.65 0.7 0.3 0.9 0.1</probabilities>
+		</cpt>
+		<cpt id="Answer_Dil6b">
+			<state id="Yes" />
+			<state id="No" />
+			<parents>Answer_Dil41 FinalEthicsScore</parents>
+			<probabilities>0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.05 0.95 0.35 0.65 0.7 0.3 0.9 0.1</probabilities>
+		</cpt>
+		<cpt id="Answer_Dil61">
+			<state id="Yes" />
+			<state id="No" />
+			<parents>FinalEthicsScore</parents>
+			<probabilities>0.05 0.95 0.35 0.65 0.7 0.3 0.9 0.1</probabilities>
+		</cpt>
+		<cpt id="Answer_Dil62">
+			<state id="Yes" />
+			<state id="No" />
+			<parents>FinalEthicsScore</parents>
+			<probabilities>0.95 0.05 0.65 0.35 0.3 0.7 0.09999999999999998 0.9</probabilities>
+		</cpt>
+		<utility id="Ethics_Score">
+			<parents>FinalEthicsScore</parents>
+			<utilities>1 0 -1 -2</utilities>
+		</utility>
+		<utility id="In_Game_Ethics_Score">
+			<parents>Answer_Dil41 Answer_Dil6b Answer_Dil62 Answer_Dil43 Answer_Dil55 Answer_Dil51 Answer_Dil61</parents>
+			<utilities>-4 -2 -2 0 -2 0 0 2 -2 0 0 2 0 2 2 4 -6 -4 -4 -2 -4 -2 -2 0 -4 -2 -2 0 -2 0 0 2 -4 -2 -2 0 -2 0 0 2 -2 0 0 2 0 2 2 4 -6 -4 -4 -2 -4 -2 -2 0 -4 -2 -2 0 -2 0 0 2 -3 -1 -1 1 -1 1 1 3 -1 1 1 3 1 3 3 5 -5 -3 -3 -1 -3 -1 -1 1 -3 -1 -1 1 -1 1 1 3 -1 1 1 3 1 3 3 5 1 3 3 5 3 5 5 7 -3 -1 -1 1 -1 1 1 3 -1 1 1 3 1 3 3 5</utilities>
+		</utility>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="GeNIe 2.1.1104.0 ACADEMIC" name="Network1" faultnameformat="nodestate">
+			<node id="FinalEthicsScore">
+				<name>Final &apos;Ethics&apos; Score</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="7" />
+				<position>593 50 641 80</position>
+				<barchart active="true" width="235" height="90" />
+			</node>
+			<node id="Answer_Dil41">
+				<name>Answer to Dilemma: 41/42</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="7" />
+				<position>579 157 627 187</position>
+				<barchart active="true" width="166" height="64" />
+			</node>
+			<node id="Answer_Dil43">
+				<name>Answer to Dilemma: 43</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="7" />
+				<position>579 237 627 267</position>
+				<barchart active="true" width="166" height="64" />
+			</node>
+			<node id="Answer_Dil55">
+				<name>Answer to Dilemma: 55</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="7" />
+				<position>579 317 627 347</position>
+				<barchart active="true" width="166" height="64" />
+			</node>
+			<node id="Answer_Dil51">
+				<name>Answer to Dilemma: 51/52</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="7" />
+				<position>579 417 627 447</position>
+				<barchart active="true" width="166" height="64" />
+			</node>
+			<node id="Answer_Dil6b">
+				<name>Answer to Dilemma: 6B</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="7" />
+				<position>579 521 627 551</position>
+				<barchart active="true" width="166" height="72" />
+			</node>
+			<node id="Answer_Dil61">
+				<name>Answer to Dilemma: 61</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="7" />
+				<position>579 617 627 647</position>
+				<barchart active="true" width="166" height="64" />
+			</node>
+			<node id="Answer_Dil62">
+				<name>Answer to Dilemma: 62</name>
+				<interior color="00ffff" />
+				<outline color="000000" />
+				<font color="000000" name="Arial" size="7" />
+				<position>579 717 627 747</position>
+				<barchart active="true" width="166" height="64" />
+			</node>
+			<node id="Ethics_Score">
+				<name>Ethics Score</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="7" />
+				<position>858 49 939 81</position>
+				<barchart active="true" width="197" height="91" />
+			</node>
+			<node id="In_Game_Ethics_Score">
+				<name>In-Game Ethics Score</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="7" />
+				<position>850 162 945 222</position>
+				<barchart active="true" width="191" height="101" />
+			</node>
+		</genie>
+	</extensions>
+</smile>
